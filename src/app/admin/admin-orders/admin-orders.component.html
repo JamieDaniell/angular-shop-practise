@@ -1,0 +1,9 @@
+
+<h2>Orders</h2>
+<div class="row" *ngIf=" orders$ | async as orders">
+    <ul class="list-group" >
+        <li *ngFor="let order of orders" class="list-group-item">
+            {{ order.datePlaced  | date }}
+        </li>
+    </ul>
+</div>
